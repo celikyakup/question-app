@@ -29,9 +29,10 @@ const Question = () => {
       setQuestion(questions[index].question);
       setAnswer(questions[index].answer);
       setImg(questions[index].media);
-      const timer = setTimeout(() => {
+      const timerChoices = setTimeout(() => {
         setChoicesVisible(true);
       }, 10000);
+  
       if (!quizComplete) {
         if (isCorrect !== null) {
           setIndex((prevIndex) => prevIndex + 1);
@@ -46,8 +47,8 @@ const Question = () => {
             setMyChoise("");
             setChoicesVisible(false);
           }, 30000);
-
-          return () => clearTimeout(timer);
+          
+          return () => clearTimeout(timer,timerChoices);
         }
       }
     } else {
