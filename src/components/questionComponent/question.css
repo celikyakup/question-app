@@ -1,0 +1,51 @@
+.buttons{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.choice{
+    background-color: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 130px;
+    height: 80px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.choice:hover{
+    background: white;
+    color: black;
+}
+
+.correct{
+    background-color: #07fe5a;
+    color: black;
+}
+
+.false{
+    background-color: #D6030D;
+}
+
+.my-choice{
+    margin-bottom: 10px;
+    padding: 3px;
+    list-style: none;
+    font-weight: 600;
+}
+
+.font-size{
+    font-size: 40px;
+}
+
+.question-size{
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.answer-size{
+    font-size: 15px;
+}

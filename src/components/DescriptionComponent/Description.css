@@ -1,0 +1,24 @@
+.start-btn{
+    background-color: #5adbb5;
+    color: white;
+    padding: 10px 20px;
+    margin-bottom: 50px;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  .info-test{
+    font-size: 18px;
+  }
+  
+  .list-text{
+    padding: 0;
+  
+  }
+
+  .description {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
