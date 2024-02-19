@@ -26,7 +26,7 @@ const Question = () => {
       const timerChoices = setTimeout(() => {
         // Choices become active after 10 second
         setChoicesVisible(true);
-      }, 10000);
+      }, 1000);
 
       if (myChoise !== "") {
         //It checks whether the option we chose is correct.
@@ -52,7 +52,7 @@ const Question = () => {
             myChoicesArray.current.push("Boş bıraktınız.");
             setMyChoise("");
             setChoicesVisible(false);
-          }, 30000);
+          }, 3000);
 
           return () => clearTimeout(timer, timerChoices);
         }
@@ -93,7 +93,7 @@ const Question = () => {
       ) : (
         <>
           <div>
-            <img src={img} alt="" />
+            <img src={img} alt="" height={"500px"} />
           </div>
           <div className="question-size">{question}</div>
           <div className="buttons">
