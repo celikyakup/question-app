@@ -26,7 +26,7 @@ const Question = () => {
       const timerChoices = setTimeout(() => {
         // Choices become active after 10 second
         setChoicesVisible(true);
-      }, 1000);
+      }, 10000);
 
       if (myChoise !== "") {
         //It checks whether the option we chose is correct.
@@ -52,7 +52,7 @@ const Question = () => {
             myChoicesArray.current.push("Boş bıraktınız.");
             setMyChoise("");
             setChoicesVisible(false);
-          }, 3000);
+          }, 30000);
 
           return () => clearTimeout(timer, timerChoices);
         }
